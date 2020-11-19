@@ -1,4 +1,5 @@
  require('dotenv').config(); // (environment varibale)this needs to be on the top
+const PORT = process.env.PORT||3000
  const express = require("express");
  const bodyParser = require("body-parser");
  const ejs = require("ejs");
@@ -139,7 +140,7 @@
        }
      }
    });
- 
+
 
    // if (req.isAuthenticated()) {
    //   res.render("secrets");
